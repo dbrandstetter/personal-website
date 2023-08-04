@@ -129,6 +129,20 @@ a:hover {
 .icon {
     text-decoration: none;
     position: relative;
+    aspect-ratio: 1;
+    animation: float 3s infinite ease;
+}
+
+@keyframes float {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 .icon:before {
@@ -228,7 +242,7 @@ a:hover {
     transform: translate3d(0, 0, 0);
     /* Set your background with this */
 
-    background: #348cb2 url("images/bg.jpg") bottom left;
+    background: #348cb2 url("images/mountains.jpg") bottom left;
     background-repeat: repeat-x;
     height: 100%;
     left: 0;
