@@ -12,12 +12,7 @@
     <noscript>
         <link href="assets/stylesheets/noscript.css" rel="stylesheet"/>
     </noscript>
-    <script defer src="assets/scripts/sw.js"></script>
-    <script defer>
-        if (typeof navigator.serviceWorker !== 'undefined') {
-            navigator.serviceWorker.register('scripts/sw.js')
-        }
-    </script>
+    <script defer src="sw.js"></script>
 </head>
 <body class="is-preload">
 <div id="wrapper">
@@ -61,6 +56,10 @@
     }
     window.onorientationchange = function () {
         document.body.scrollTop = 0;
+    }
+
+    if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('scripts/sw.js')
     }
 </script>
 </body>

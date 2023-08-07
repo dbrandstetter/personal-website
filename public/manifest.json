@@ -8,13 +8,26 @@
   "scope": "/",
   "short_name": "DB - Website",
   "start_url": "/",
-  "theme_color": "#7fb4cb",
-  "categories": ["personalization", "fitness", "education", "business"],
+  "theme_color": "#5d5fa6",
+  "categories": [
+    "personalization",
+    "fitness",
+    "education",
+    "business"
+  ],
   "icons": [
     {
-      "src": "./images/icon.png",
+      "src": "icons/icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
+  ],
+  "lang": "en",
+  "display_override": [
+    "standalone",
+    "fullscreen",
+    "minimal-ui",
+    "browser",
+    "window-controls-overlay"
   ]
 }
