@@ -17,9 +17,10 @@
   ],
   "icons": [
     {
-      "src": "icons/icon.png",
+      "src": "https://david-brandstetter-com.web.app/assets/icons/icon.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "lang": "en",
@@ -29,5 +30,8 @@
     "minimal-ui",
     "browser",
     "window-controls-overlay"
-  ]
+  ],
+  "edge_side_panel": {
+    "preferred_width": 0
+  }
 }
